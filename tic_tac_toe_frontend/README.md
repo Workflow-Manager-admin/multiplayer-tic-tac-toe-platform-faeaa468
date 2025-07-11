@@ -13,6 +13,16 @@ This project provides a minimal React template with a clean, modern UI and minim
 
 In the project directory, you can run:
 
+### Real-Time Updates / WebSocket (optional)
+
+If your backend supports WebSocket for live game updates, set the following environment variable in a `.env` file at project root:
+
+```
+REACT_APP_WS_URL=ws://localhost:8000/ws/game/:gameId
+```
+Otherwise the frontend falls back automatically to polling every ~1.5 seconds.
+You may adjust the port/URL according to your actual backend deployment.
+
 ### `npm start`
 
 Runs the app in development mode.\

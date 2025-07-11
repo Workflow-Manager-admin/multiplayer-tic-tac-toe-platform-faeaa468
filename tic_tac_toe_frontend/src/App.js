@@ -54,21 +54,84 @@ function GamePage() {
   const [game, setGame] = useState(null);
   const [loading, setLoading] = useState(true);
   const [movePending, setMovePending] = useState(false);
+  const [wsActive, setWsActive] = useState(false); // For websocket mode status
   const auth = useAuth();
 
+  // --- Periodic polling or WS: ensures state is always fresh for both players ---
+
   useEffect(() => {
+    let active = true;
+    let pollingInterval = null;
+    let ws = null;
     setLoading(true);
-    api.fetchGame(gameId)
-      .then(setGame)
-      .finally(()=>setLoading(false));
+
+    // --- Helper to update UI state from backend ---
+    const refreshGame = () => {
+      api.fetchGame(gameId)
+        .then(data => { if (active) setGame(data); })
+        .finally(() => { if (active) setLoading(false); });
+    };
+
+    // --- WebSocket scaffolding (auto falls back to polling if not supported) ---
+    const WS_URL = process.env.REACT_APP_WS_URL || (window.location.protocol === "https:" 
+                            ? `wss://${window.location.hostname}:8000/ws/game/${gameId}` 
+                            : `ws://${window.location.hostname}:8000/ws/game/${gameId}`);
+    let wsSupported = false;
+
+    try {
+      // Only try WS if backend supports
+      ws = new window.WebSocket(WS_URL);
+      ws.onopen = () => {
+        setWsActive(true);
+      };
+      ws.onmessage = (evt) => {
+        // Expect updated board/game state pushed by backend
+        try {
+          const data = JSON.parse(evt.data);
+          // If data matches current game or has "id":
+          if (data && data.id === gameId) setGame(data);
+        } catch {}
+      };
+      ws.onerror = (evt) => {
+        setWsActive(false);
+        if (active && !pollingInterval) {
+          // Fallback to polling if not supported
+          pollingInterval = setInterval(refreshGame, 1500);
+        }
+      };
+      ws.onclose = () => {
+        setWsActive(false);
+        if (active && !pollingInterval) {
+          pollingInterval = setInterval(refreshGame, 1500);
+        }
+      };
+      wsSupported = true;
+    } catch {
+      wsSupported = false;
+    }
+
+    // Fallback: polling if websocket not supported or fails
+    if (!wsSupported) {
+      pollingInterval = setInterval(refreshGame, 1500);
+    }
+
+    // Start with first fetch always for responsiveness
+    refreshGame();
+
+    return () => {
+      active = false;
+      if (pollingInterval) clearInterval(pollingInterval);
+      if (ws) ws.close();
+    };
   }, [gameId]);
+
 
   const makeMove = async (idx) => {
     if (!game || !game.myTurn || movePending) return;
     setMovePending(true);
     try {
       const res = await api.makeMove(game.id, { cell: idx });
-      setGame(res); // Replace with new game state
+      setGame(res); // Replace with new game state (API result may broadcast, but also update locally)
     } catch (e) {}
     setMovePending(false);
   };
@@ -88,6 +151,11 @@ function GamePage() {
           ) : (
             <span style={{color:"#424242"}}>{game.myTurn ? "Your turn" : "Opponent's turn"}</span>
           )}</div>
+          {wsActive ? (
+            <span style={{fontSize:11, color:"#1976D2"}}>Real-time updates</span>
+          ) : (
+            <span style={{fontSize:11, color:"#A9A9A9"}}>Polling for game updates…</span>
+          )}
         </div>
         <Board
           board={game.board || Array(9).fill("")}
