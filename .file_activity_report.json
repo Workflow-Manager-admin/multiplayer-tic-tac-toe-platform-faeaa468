@@ -2,164 +2,164 @@
     "top_n_overall": [
         {
             "file": "/tmp/kavia/workspace/code-generation/multiplayer-tic-tac-toe-platform-faeaa468/tic_tac_toe_frontend/package.json",
-            "count": 121
+            "count": 269
         },
         {
             "file": "/tmp/kavia/workspace/code-generation/multiplayer-tic-tac-toe-platform-faeaa468/tic_tac_toe_frontend/.gitignore",
-            "count": 36
-        },
-        {
-            "file": "/tmp/kavia/workspace/code-generation/multiplayer-tic-tac-toe-platform-faeaa468/tic_tac_toe_frontend/src/index.js",
-            "count": 18
+            "count": 53
         },
         {
             "file": "/tmp/kavia/workspace/code-generation/multiplayer-tic-tac-toe-platform-faeaa468/tic_tac_toe_frontend/src/App.js",
-            "count": 17
+            "count": 28
+        },
+        {
+            "file": "/tmp/kavia/workspace/code-generation/multiplayer-tic-tac-toe-platform-faeaa468/tic_tac_toe_frontend/src/index.js",
+            "count": 22
         },
         {
             "file": "/tmp/kavia/workspace/code-generation/multiplayer-tic-tac-toe-platform-faeaa468/tic_tac_toe_frontend/post_process_status.lock",
-            "count": 12
+            "count": 17
+        },
+        {
+            "file": "/tmp/kavia/workspace/code-generation/multiplayer-tic-tac-toe-platform-faeaa468/tic_tac_toe_frontend/src/App.css",
+            "count": 13
+        },
+        {
+            "file": "/tmp/kavia/workspace/code-generation/multiplayer-tic-tac-toe-platform-faeaa468/tic_tac_toe_frontend/eslint.config.mjs",
+            "count": 13
         },
         {
             "file": "/tmp/kavia/workspace/code-generation/multiplayer-tic-tac-toe-platform-faeaa468/tic_tac_toe_frontend/package-lock.json",
             "count": 12
         },
         {
-            "file": "/tmp/kavia/workspace/code-generation/multiplayer-tic-tac-toe-platform-faeaa468/tic_tac_toe_frontend/eslint.config.mjs",
-            "count": 9
+            "file": "/tmp/kavia/workspace/code-generation/multiplayer-tic-tac-toe-platform-faeaa468/tic_tac_toe_frontend/src/auth/AuthContext.js",
+            "count": 11
         },
         {
             "file": "/tmp/kavia/workspace/code-generation/multiplayer-tic-tac-toe-platform-faeaa468/tic_tac_toe_frontend/src/index.css",
-            "count": 7
-        },
-        {
-            "file": "/tmp/kavia/workspace/code-generation/multiplayer-tic-tac-toe-platform-faeaa468/tic_tac_toe_frontend/src/auth/AuthContext.js",
-            "count": 7
-        },
-        {
-            "file": "/tmp/kavia/workspace/code-generation/multiplayer-tic-tac-toe-platform-faeaa468/tic_tac_toe_frontend/src/App.css",
-            "count": 6
-        },
-        {
-            "file": "/tmp/kavia/workspace/code-generation/multiplayer-tic-tac-toe-platform-faeaa468/tic_tac_toe_frontend/src/App.test.js",
-            "count": 5
-        },
-        {
-            "file": "/tmp/kavia/workspace/code-generation/multiplayer-tic-tac-toe-platform-faeaa468/tic_tac_toe_frontend/public/index.html",
-            "count": 5
-        },
-        {
-            "file": "/tmp/kavia/workspace/code-generation/multiplayer-tic-tac-toe-platform-faeaa468/tic_tac_toe_frontend/README.md",
-            "count": 4
-        },
-        {
-            "file": "/tmp/kavia/workspace/code-generation/multiplayer-tic-tac-toe-platform-faeaa468/tic_tac_toe_frontend/public/favicon.ico",
-            "count": 4
-        },
-        {
-            "file": "/tmp/kavia/workspace/code-generation/multiplayer-tic-tac-toe-platform-faeaa468/tic_tac_toe_frontend/src/setupTests.js",
-            "count": 4
-        },
-        {
-            "file": "/tmp/kavia/workspace/code-generation/multiplayer-tic-tac-toe-platform-faeaa468/tic_tac_toe_frontend/public/manifest.json",
-            "count": 4
-        },
-        {
-            "file": "/tmp/kavia/workspace/code-generation/multiplayer-tic-tac-toe-platform-faeaa468/tic_tac_toe_frontend/public/robots.txt",
-            "count": 4
-        },
-        {
-            "file": "/tmp/kavia/workspace/code-generation/multiplayer-tic-tac-toe-platform-faeaa468/tic_tac_toe_frontend/public/logo512.png",
-            "count": 4
-        },
-        {
-            "file": "/tmp/kavia/workspace/code-generation/multiplayer-tic-tac-toe-platform-faeaa468/tic_tac_toe_frontend/public/logo192.png",
-            "count": 4
+            "count": 10
         },
         {
             "file": "/tmp/kavia/workspace/code-generation/multiplayer-tic-tac-toe-platform-faeaa468/tic_tac_toe_frontend/src/services/apiService.js",
-            "count": 4
+            "count": 10
+        },
+        {
+            "file": "/tmp/kavia/workspace/code-generation/multiplayer-tic-tac-toe-platform-faeaa468/tic_tac_toe_frontend/src/components/GameLobby.js",
+            "count": 10
+        },
+        {
+            "file": "/tmp/kavia/workspace/code-generation/multiplayer-tic-tac-toe-platform-faeaa468/tic_tac_toe_frontend/src/components/Sidebar.js",
+            "count": 10
+        },
+        {
+            "file": "/tmp/kavia/workspace/code-generation/multiplayer-tic-tac-toe-platform-faeaa468/tic_tac_toe_frontend/src/components/AuthModal.js",
+            "count": 10
+        },
+        {
+            "file": "/tmp/kavia/workspace/code-generation/multiplayer-tic-tac-toe-platform-faeaa468/tic_tac_toe_frontend/src/components/Board.js",
+            "count": 8
+        },
+        {
+            "file": "/tmp/kavia/workspace/code-generation/multiplayer-tic-tac-toe-platform-faeaa468/tic_tac_toe_frontend/public/index.html",
+            "count": 7
+        },
+        {
+            "file": "/tmp/kavia/workspace/code-generation/multiplayer-tic-tac-toe-platform-faeaa468/tic_tac_toe_frontend/src/auth/README.md",
+            "count": 7
+        },
+        {
+            "file": "/tmp/kavia/workspace/code-generation/multiplayer-tic-tac-toe-platform-faeaa468/tic_tac_toe_frontend/src/services/README.md",
+            "count": 7
+        },
+        {
+            "file": "/tmp/kavia/workspace/code-generation/multiplayer-tic-tac-toe-platform-faeaa468/tic_tac_toe_frontend/src/components/Board.css",
+            "count": 7
+        },
+        {
+            "file": "/tmp/kavia/workspace/code-generation/multiplayer-tic-tac-toe-platform-faeaa468/tic_tac_toe_frontend/src/components/Sidebar.css",
+            "count": 7
         }
     ],
     "top_n_last_10_min_accessed": [
         {
             "file": "/tmp/kavia/workspace/code-generation/multiplayer-tic-tac-toe-platform-faeaa468/tic_tac_toe_frontend/package.json",
-            "count": 117
+            "count": 181
         },
         {
             "file": "/tmp/kavia/workspace/code-generation/multiplayer-tic-tac-toe-platform-faeaa468/tic_tac_toe_frontend/.gitignore",
-            "count": 36
-        },
-        {
-            "file": "/tmp/kavia/workspace/code-generation/multiplayer-tic-tac-toe-platform-faeaa468/tic_tac_toe_frontend/src/index.js",
-            "count": 16
+            "count": 38
         },
         {
             "file": "/tmp/kavia/workspace/code-generation/multiplayer-tic-tac-toe-platform-faeaa468/tic_tac_toe_frontend/src/App.js",
-            "count": 15
+            "count": 18
+        },
+        {
+            "file": "/tmp/kavia/workspace/code-generation/multiplayer-tic-tac-toe-platform-faeaa468/tic_tac_toe_frontend/src/index.js",
+            "count": 14
         },
         {
             "file": "/tmp/kavia/workspace/code-generation/multiplayer-tic-tac-toe-platform-faeaa468/tic_tac_toe_frontend/post_process_status.lock",
-            "count": 12
-        },
-        {
-            "file": "/tmp/kavia/workspace/code-generation/multiplayer-tic-tac-toe-platform-faeaa468/tic_tac_toe_frontend/eslint.config.mjs",
-            "count": 9
-        },
-        {
-            "file": "/tmp/kavia/workspace/code-generation/multiplayer-tic-tac-toe-platform-faeaa468/tic_tac_toe_frontend/src/index.css",
-            "count": 7
+            "count": 11
         },
         {
             "file": "/tmp/kavia/workspace/code-generation/multiplayer-tic-tac-toe-platform-faeaa468/tic_tac_toe_frontend/src/auth/AuthContext.js",
-            "count": 7
+            "count": 11
         },
         {
-            "file": "/tmp/kavia/workspace/code-generation/multiplayer-tic-tac-toe-platform-faeaa468/tic_tac_toe_frontend/package-lock.json",
-            "count": 6
+            "file": "/tmp/kavia/workspace/code-generation/multiplayer-tic-tac-toe-platform-faeaa468/tic_tac_toe_frontend/src/services/apiService.js",
+            "count": 10
         },
         {
             "file": "/tmp/kavia/workspace/code-generation/multiplayer-tic-tac-toe-platform-faeaa468/tic_tac_toe_frontend/src/App.css",
+            "count": 8
+        },
+        {
+            "file": "/tmp/kavia/workspace/code-generation/multiplayer-tic-tac-toe-platform-faeaa468/tic_tac_toe_frontend/eslint.config.mjs",
+            "count": 8
+        },
+        {
+            "file": "/tmp/kavia/workspace/code-generation/multiplayer-tic-tac-toe-platform-faeaa468/tic_tac_toe_frontend/src/components/Board.js",
+            "count": 8
+        },
+        {
+            "file": "/tmp/kavia/workspace/code-generation/multiplayer-tic-tac-toe-platform-faeaa468/tic_tac_toe_frontend/src/components/GameLobby.js",
+            "count": 8
+        },
+        {
+            "file": "/tmp/kavia/workspace/code-generation/multiplayer-tic-tac-toe-platform-faeaa468/tic_tac_toe_frontend/src/components/Sidebar.js",
+            "count": 8
+        },
+        {
+            "file": "/tmp/kavia/workspace/code-generation/multiplayer-tic-tac-toe-platform-faeaa468/tic_tac_toe_frontend/src/components/AuthModal.js",
+            "count": 8
+        },
+        {
+            "file": "/tmp/kavia/workspace/code-generation/multiplayer-tic-tac-toe-platform-faeaa468/tic_tac_toe_frontend/src/index.css",
             "count": 6
         },
         {
-            "file": "/tmp/kavia/workspace/code-generation/multiplayer-tic-tac-toe-platform-faeaa468/tic_tac_toe_frontend/src/App.test.js",
+            "file": "/tmp/kavia/workspace/code-generation/multiplayer-tic-tac-toe-platform-faeaa468/tic_tac_toe_frontend/src/auth/README.md",
+            "count": 5
+        },
+        {
+            "file": "/tmp/kavia/workspace/code-generation/multiplayer-tic-tac-toe-platform-faeaa468/tic_tac_toe_frontend/src/services/README.md",
+            "count": 5
+        },
+        {
+            "file": "/tmp/kavia/workspace/code-generation/multiplayer-tic-tac-toe-platform-faeaa468/tic_tac_toe_frontend/src/components/Board.css",
+            "count": 5
+        },
+        {
+            "file": "/tmp/kavia/workspace/code-generation/multiplayer-tic-tac-toe-platform-faeaa468/tic_tac_toe_frontend/src/components/Sidebar.css",
+            "count": 5
+        },
+        {
+            "file": "/tmp/kavia/workspace/code-generation/multiplayer-tic-tac-toe-platform-faeaa468/tic_tac_toe_frontend/src/components/AuthModal.css",
             "count": 5
         },
         {
             "file": "/tmp/kavia/workspace/code-generation/multiplayer-tic-tac-toe-platform-faeaa468/tic_tac_toe_frontend/public/index.html",
-            "count": 5
-        },
-        {
-            "file": "/tmp/kavia/workspace/code-generation/multiplayer-tic-tac-toe-platform-faeaa468/tic_tac_toe_frontend/README.md",
-            "count": 4
-        },
-        {
-            "file": "/tmp/kavia/workspace/code-generation/multiplayer-tic-tac-toe-platform-faeaa468/tic_tac_toe_frontend/public/favicon.ico",
-            "count": 4
-        },
-        {
-            "file": "/tmp/kavia/workspace/code-generation/multiplayer-tic-tac-toe-platform-faeaa468/tic_tac_toe_frontend/src/setupTests.js",
-            "count": 4
-        },
-        {
-            "file": "/tmp/kavia/workspace/code-generation/multiplayer-tic-tac-toe-platform-faeaa468/tic_tac_toe_frontend/public/manifest.json",
-            "count": 4
-        },
-        {
-            "file": "/tmp/kavia/workspace/code-generation/multiplayer-tic-tac-toe-platform-faeaa468/tic_tac_toe_frontend/public/robots.txt",
-            "count": 4
-        },
-        {
-            "file": "/tmp/kavia/workspace/code-generation/multiplayer-tic-tac-toe-platform-faeaa468/tic_tac_toe_frontend/public/logo512.png",
-            "count": 4
-        },
-        {
-            "file": "/tmp/kavia/workspace/code-generation/multiplayer-tic-tac-toe-platform-faeaa468/tic_tac_toe_frontend/public/logo192.png",
-            "count": 4
-        },
-        {
-            "file": "/tmp/kavia/workspace/code-generation/multiplayer-tic-tac-toe-platform-faeaa468/tic_tac_toe_frontend/src/services/apiService.js",
             "count": 4
         }
     ]

@@ -1,0 +1,49 @@
+.modal-backdrop {
+  position: fixed; inset: 0; background: rgba(33,48,66,0.24);
+  display: flex; align-items: center; justify-content: center;
+  z-index: 30;
+}
+.modal-content {
+  background: #fff;
+  border-radius: 14px;
+  padding: 36px 32px 28px 32px;
+  min-width: 318px;
+  box-shadow: 0 8px 42px rgba(0,0,0,0.12);
+  position: relative;
+  max-width: 95vw;
+}
+.modal-close {
+  position: absolute; top:16px; right:18px;
+  background: none; border: none;
+  color: #424242;
+  font-size: 1.5rem; cursor: pointer; font-weight: bold;
+  transition: color 0.16s;
+}
+.modal-close:hover { color: #1976D2;}
+.modal-content h2 {
+  margin-top: 0; margin-bottom: 18px; font-size: 1.48rem;
+  color: #1976D2;
+}
+.modal-content form {
+  display: flex; flex-direction: column; gap:16px;
+}
+.modal-content input {
+  border: 1.6px solid #c4c4c4;
+  border-radius: 9px;
+  height: 39px;
+  font-size: 1rem;
+  padding: 0 11px; color: #13233a;
+  background: #f4f5f7;
+  font-family: inherit;
+}
+.btn {
+  background: #1976D2; color: white; border: none; border-radius: 10px;
+  font-weight: bold; padding: 13px 0; font-size:1rem; transition: box-shadow 0.19s;
+  box-shadow: 0 2px 8px rgba(25,118,210,0.11);
+  cursor: pointer;
+}
+.btn:disabled { background:#788baa; cursor:wait; }
+.modal-error { color: #B71C1C; background: #FFF6F6; padding:8px 0 0 0; font-size: 0.97em;}
+@media (max-width:500px) {
+  .modal-content { min-width: unset; width: 96vw; padding:18px 5vw 12px 5vw;}
+}

@@ -1,0 +1,40 @@
+.ttt-board {
+  width: 340px;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-gap: 10px;
+  margin: 0 auto;
+}
+.ttt-cell {
+  background: var(--bg-secondary, #f8f9fa);
+  border: 2px solid var(--primary, #1976D2);
+  border-radius: 10px;
+  font-size: 2.8rem;
+  color: var(--primary, #1976D2);
+  height: 90px;
+  aspect-ratio: 1/1;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  display: flex; align-items: center; justify-content: center;
+  cursor: pointer;
+  transition: box-shadow 0.2s, background 0.2s;
+  box-shadow: 0 2px 8px rgba(25,118,210,0.06);
+}
+.ttt-cell:disabled { 
+  background: #f1f1f1;
+  cursor: default; opacity: 0.6;
+}
+.ttt-board.disabled .ttt-cell {
+  cursor: not-allowed; opacity: 0.55;
+}
+.ttt-cell.win-cell {
+  background: var(--accent, #FFEB3B);
+  color: var(--secondary, #424242);
+  border-color: var(--accent, #FFEB3B);
+}
+.cell-x { color: var(--primary, #1976D2);}
+.cell-o { color: var(--secondary, #424242);}
+@media (max-width:500px){
+  .ttt-board { width: 98vw; max-width: 350px; }
+  .ttt-cell { height: 20vw; min-height: 64px; font-size: 2.2rem;}
+}
