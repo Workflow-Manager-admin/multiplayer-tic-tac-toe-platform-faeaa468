@@ -1,92 +1,115 @@
-# Lightweight React Template for KAVIA
+# Multiplayer Tic Tac Toe Platform Frontend
 
-This project provides a minimal React template with a clean, modern UI and minimal dependencies.
+This is the React web UI for the multiplayer Tic Tac Toe project. It provides user authentication, live gameplay, match history display, and leaderboard features—all communicating via HTTP with the backend API.
+
+---
 
 ## Features
 
-- **Lightweight**: No heavy UI frameworks - uses only vanilla CSS and React
-- **Modern UI**: Clean, responsive design with KAVIA brand styling
-- **Fast**: Minimal dependencies for quick loading times
-- **Simple**: Easy to understand and modify
+- **Login & Signup**: Secure user registration and authentication.
+- **Start / Join Games**: Create games, join other players.
+- **Play Tic Tac Toe**: Interactive, real-time board; turn-based logic enforced.
+- **Leaderboard**: View top players, updated after each game.
+- **Persistent Sessions**: Remembers login using secure cookies.
+- **Responsive UI**: Modern, minimal look with easy navigation.
 
-## Getting Started
+---
 
-In the project directory, you can run:
+## Setup & Installation
 
-### Real-Time Updates / WebSocket (optional)
+### Prerequisites
 
-If your backend supports WebSocket for live game updates, set the following environment variable in a `.env` file at project root:
+- Node.js (>=14.x) & npm
 
+### Install Steps
+
+1. Change to the frontend directory:
+    ```bash
+    cd multiplayer-tic-tac-toe-platform-faeaa468/tic_tac_toe_frontend
+    ```
+2. Install dependencies:
+    ```bash
+    npm install
+    ```
+3. (Optional) Set up backend URL:
+    - By default, the frontend expects the backend at `http://localhost:8000`.
+    - To override, create a `.env` file:
+      ```
+      REACT_APP_API_URL=http://your-backend-host:8000
+      ```
+    - For WebSocket (optional, if implemented server-side):
+      ```
+      REACT_APP_WS_URL=ws://localhost:8000/ws/game/:gameId
+      ```
+    - Otherwise, the UI falls back to polling updates.
+
+4. Start the dev server:
+    ```bash
+    npm start
+    ```
+    Open [http://localhost:3000](http://localhost:3000) to use the app.
+
+---
+
+## Usage
+
+- **Sign up or log in** to begin (homepage).
+- **Create a game** or **join** an existing one.
+- **Play moves**: Click spaces to take your turn!
+- **View the leaderboard** via the navigation sidebar.
+- Login is required for all playing/leaderboard features (session cookie set automatically).
+
+---
+
+## Developer Notes
+
+- UI built as modular React components. Customize them in `src/`.
+- Styles/theme in `src/App.css`—supports primary/secondary/accent via CSS variables.
+- Uses HTTP-only cookies for auth: ensure CORS backend config allows credentials.
+- Main backend endpoints expected:
+    - `POST /auth/signup` – Register
+    - `POST /auth/login` – Login
+    - `POST /games/create` – New game
+    - `POST /games/join` – Join game
+    - `POST /games/play` – Play a move
+    - `GET /games/{game_id}` – Retrieve game
+    - `GET /leaderboard/` – Top players
+
+  Refer to backend API reference for schema details and real responses.
+
+- All game logic and turn enforcement is handled by the backend.
+
+### Running Tests
+
+```bash
+npm test
 ```
-REACT_APP_WS_URL=ws://localhost:8000/ws/game/:gameId
-```
-Otherwise the frontend falls back automatically to polling every ~1.5 seconds.
-You may adjust the port/URL according to your actual backend deployment.
 
-### `npm start`
+---
 
-Runs the app in development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Known Issues / Limitations
 
-### `npm test`
+- Assumes backend runs locally on port 8000 by default (see `.env` for how to override).
+- Full test suite only covers UI unit/component logic; backend must be separately running for full integration tests.
+- If backend session or CORS is misconfigured, login/game features may fail.
+- WebSocket is opt-in and falls back to polling if missing.
+- Only two users per game supported.
 
-Launches the test runner in interactive watch mode.
+---
 
-### `npm run build`
+## Styling and Customization
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Colors: Adjust in `src/App.css` – defaults:  
+  - Primary: `#1976D2`  
+  - Secondary: `#424242`  
+  - Accent: `#FFEB3B`  
 
-## Customization
+- Layout: Header, board area, sidebar for navigation/history.
 
-### Colors
+---
 
-The main brand colors are defined as CSS variables in `src/App.css`:
+## Contributing
 
-```css
-:root {
-  --kavia-orange: #E87A41;
-  --kavia-dark: #1A1A1A;
-  --text-color: #ffffff;
-  --text-secondary: rgba(255, 255, 255, 0.7);
-  --border-color: rgba(255, 255, 255, 0.1);
-}
-```
+Feedback, issues, and PRs welcome! See `src/` for core UI logic.
 
-### Components
-
-This template uses pure HTML/CSS components instead of a UI framework. You can find component styles in `src/App.css`. 
-
-Common components include:
-- Buttons (`.btn`, `.btn-large`)
-- Container (`.container`)
-- Navigation (`.navbar`)
-- Typography (`.title`, `.subtitle`, `.description`)
-
-## Learn More
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---

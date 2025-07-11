@@ -6,7 +6,7 @@
         },
         {
             "file": "/tmp/kavia/workspace/code-generation/multiplayer-tic-tac-toe-platform-faeaa468/tic_tac_toe_frontend/.gitignore",
-            "count": 87
+            "count": 89
         },
         {
             "file": "/tmp/kavia/workspace/code-generation/multiplayer-tic-tac-toe-platform-faeaa468/tic_tac_toe_frontend/src/App.js",
@@ -27,6 +27,10 @@
         {
             "file": "/tmp/kavia/workspace/code-generation/multiplayer-tic-tac-toe-platform-faeaa468/tic_tac_toe_frontend/src/App.css",
             "count": 18
+        },
+        {
+            "file": "/tmp/kavia/workspace/code-generation/multiplayer-tic-tac-toe-platform-faeaa468/tic_tac_toe_frontend/README.md",
+            "count": 15
         },
         {
             "file": "/tmp/kavia/workspace/code-generation/multiplayer-tic-tac-toe-platform-faeaa468/tic_tac_toe_frontend/src/components/GameLobby.js",
@@ -73,10 +77,6 @@
             "count": 12
         },
         {
-            "file": "/tmp/kavia/workspace/code-generation/multiplayer-tic-tac-toe-platform-faeaa468/tic_tac_toe_frontend/README.md",
-            "count": 11
-        },
-        {
             "file": "/tmp/kavia/workspace/code-generation/multiplayer-tic-tac-toe-platform-faeaa468/tic_tac_toe_frontend/src/auth/README.md",
             "count": 9
         }
@@ -88,7 +88,7 @@
         },
         {
             "file": "/tmp/kavia/workspace/code-generation/multiplayer-tic-tac-toe-platform-faeaa468/tic_tac_toe_frontend/.gitignore",
-            "count": 72
+            "count": 70
         },
         {
             "file": "/tmp/kavia/workspace/code-generation/multiplayer-tic-tac-toe-platform-faeaa468/tic_tac_toe_frontend/src/App.js",
@@ -96,7 +96,7 @@
         },
         {
             "file": "/tmp/kavia/workspace/code-generation/multiplayer-tic-tac-toe-platform-faeaa468/tic_tac_toe_frontend/post_process_status.lock",
-            "count": 21
+            "count": 19
         },
         {
             "file": "/tmp/kavia/workspace/code-generation/multiplayer-tic-tac-toe-platform-faeaa468/tic_tac_toe_frontend/src/index.js",
@@ -151,16 +151,16 @@
             "count": 9
         },
         {
+            "file": "/tmp/kavia/workspace/code-generation/multiplayer-tic-tac-toe-platform-faeaa468/tic_tac_toe_frontend/README.md",
+            "count": 8
+        },
+        {
             "file": "/tmp/kavia/workspace/code-generation/multiplayer-tic-tac-toe-platform-faeaa468/tic_tac_toe_frontend/src/auth/README.md",
             "count": 7
         },
         {
             "file": "/tmp/kavia/workspace/code-generation/multiplayer-tic-tac-toe-platform-faeaa468/tic_tac_toe_frontend/src/services/README.md",
             "count": 7
-        },
-        {
-            "file": "/tmp/kavia/workspace/code-generation/multiplayer-tic-tac-toe-platform-faeaa468/tic_tac_toe_frontend/README.md",
-            "count": 6
         }
     ]
 }
